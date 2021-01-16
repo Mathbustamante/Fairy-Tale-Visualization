@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fairy Tales</title>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>  
+        <div id="intro">
+            <h1>Fairy Tale Visualization</h1>
+            <div class="description">
+                <ul>
+                    <li>The first visualization displays the length of each fairy tale based on the number of words.</li>
+                    <li>
+                        After clicking in one of the highlighted fairy tales, another visualization will be displayed. This visualization 
+                        will show all the words used in the fairy tale inside a circle. The radius of the circle is determined by how frequent
+                        the word appears.
+                    </li>
+                </ul>
+            </div>
+        </div>
+                
+        <div class="container">
+            <div id="word-count-visualization">
+                <h1>Number of words in each fairy taile</h1>
+                <svg></svg> 
+            </div>
+            <hr>
+        
+            <div id="text-visualization">
+                <h1>Number of times a work appears</h1>
+                <svg></svg>
+            </div>
+        </div>
+
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <script src="js/wordCountVisualization.js"></script>
+        <script src="js/textVisualization.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
